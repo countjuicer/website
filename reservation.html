@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="with=device-width, initial-scale=1.0">
+      <title> ResearveMrBean </title>
+      <link rel="stylesheet" href="researvemrbean.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/>
+   </head>
+   <body>
+      <section class="sub-header">
+         <nav>
+            <a href="index.html"><img src="Pics/Logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="reservation.html">RESERVATION</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+               </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+         <h1> Table Reservation </h1>
+      </section>
+
+<!----------- Reservation -------->
+
+<section class="reserve-system">
+<div class="contact-left-title">
+      <h2>Reserve Here</h2>
+<div class="contact-container">
+   <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+      <input type="hidden" name="access_key" value="4a59dca2-c726-444f-a827-77c128421387">
+      <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+      <input type="tel" id="phone" name="phone" placeholder="Contact Number (09XXXXXXXXX)" pattern="[0]{1}[9]{1}[0-999999999]{9}" class="contact-inputs" required>
+      <input type="text" name="No. of people" placeholder="No. of people" class="contact-inputs" required>
+      <textarea name="Order" placeholder="Your Order" class="contact-inputs" required></textarea>
+      <button type="submit">Send</button>
+   </form>
+   <div class="contact-right">
+      <img src="Pics/Logo.jpg" alt="">
+   </div>
+</div>
+
+</section>
+
+<!--------- Galleries-------->
+
+<section class="facilities">
+   <h1> Galleries</h1>
+   <p>Explore Our Varius Menu and Delicacies</p>
+
+   <div class="gal">
+      <div class="facilities-col">
+         <img src="Pics/Ice coffee.jpg">
+      </div>
+      <div class="facilities-col">
+         <img src="Pics/Latte.jpg">
+      </div>
+      <div class="facilities-col">
+         <img src="Pics/Muffins 2.jpg"> 
+      </div>
+      <div class="facilities-col">
+         <img src="Pics/woah.jpg"> 
+      </div>
+      <div class="facilities-col">
+         <img src="Pics/teriyaki.jpg">
+      </div>
+      <div class="facilities-col">
+         <img src="Pics/Finger.jpg">
+      </div>
+   </div>
+</section>
+
+
+<!---------Footer------->
+
+<section class="footer">
+   <h4>About Us</h4>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+      tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, 
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+      consequat. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur.</p>
+      <div class="icons">
+         <i class="fa fa-facebook"></i>
+         <i class="fa fa-twitter"></i>
+         <i class="fa fa-instagram"></i>
+         <i class="fa fa-youtube-play"></i>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+</section>
+
+
+<!------JavaScript for Toggle Menu------->
+      <script>
+
+         var navLinks = document.getElementById("navLinks");
+         function showMenu(){
+            navLinks.style.right = "0";
+         }
+         function hideMenu(){
+            navLinks.style.right = "-200px";
+         }
+
+      </script>
+
+
+   </body>
+</html>
